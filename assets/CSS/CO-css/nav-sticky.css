@@ -1,0 +1,114 @@
+.nav-sticky .nav-sub-list {
+    background-color: #2c2f33;
+}
+
+.nav.active {
+    background-color: #000000;
+}
+
+.nav-black.active {
+    background-color: #000000;
+}
+
+.nav-black.active .w-inline-block img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 767px) {
+    .nav-black.active .nav-toggle.active .nav-toggle-bar {
+        background-color: #ffffff;
+    }
+    .nav-black.active .div-block-4 .nav-btn-black {
+        display: none;
+    }
+}
+
+.nav.active .nav-btn {
+    display: none;
+}
+
+.nav-black.active .nav-btn {
+    display: none;
+}
+
+.nav-sub-item.active .nav-sub-list {
+    display: block;
+}
+
+.nav.active .nav-container-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav-black.active .nav-container-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav-toggle.active .nav-toggle-bar {
+    background: $comet;
+}
+
+.nav-toggle.active .nav-toggle-bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+
+.nav-toggle.active .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active .nav-toggle-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 7px;
+}
+
+.sub-child-list .sub-child-item:last-child .nav-separator {
+    display: none;
+}
+
+.link-block-5:not(:hover) .sub-child-item-img {
+    opacity: 0.1;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+    .sub-child-wrapper {
+        height: 500px;
+        overflow: scroll;
+    }
+    .sub-child-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .sub-child-wrapper {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 479px) {
+    .live-workshop-link.mobile {
+        padding-bottom: 0;
+    }
+    .live-workshop-link.mobile:last-of-type {
+        padding-bottom: 40px;
+    }
+}

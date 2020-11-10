@@ -1,0 +1,242 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero .container {
+        min-height: 500px;
+        overflow: visible;
+    }
+    .hero .hero-text-box {
+        min-height: 500px;
+    }
+    .hero .hero-img {
+        -webkit-transform: translate(120px, 0px);
+        -ms-transform: translate(120px, 0px);
+        transform: translate(120px, 0px);
+    }
+    .hero .hero-link {
+        bottom: 35px;
+    }
+    .teacher-box-wrapper {
+        bottom: 35px;
+    }
+    .teacher-box {
+        bottom: 35px;
+    }
+    .categorie-list {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .categorie-list-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.categorie-list-item {
+    outline: none;
+}
+
+.categorie-list-item:hover .heading-7 {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categorie-list-item {
+        width: 350px !important;
+    }
+}
+
+.categorie-list .slick-list.draggable {
+    padding: 0 !important;
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: -78px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border: 2px solid #2C2F33;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.slick-arrow.slick-next {
+    right: 0 !important;
+}
+
+.slick-arrow.slick-prev {
+    right: 70px !important;
+}
+
+.slick-arrow img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .slick-arrow {
+        display: none;
+    }
+}
+
+.slick-arrow:hover img,
+.slick-arrow:focus img {
+    opacity: 0.7;
+}
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+    border-color: #8E8E93;
+}
+
+.slick-arrow.slick-next {
+    right: -110px;
+}
+
+.slick-arrow.slick-prev {
+    right: -42px;
+}
+
+@media (max-width: 1200px) {
+    .slick-arrow.slick-next {
+        right: 15px;
+    }
+    .slick-arrow.slick-prev {
+        right: 83px;
+    }
+}
+
+.featured-container:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    height: 100%;
+    width: 1000px;
+    background-color: #ffffff;
+    z-index: 99;
+    margin-right: 5px;
+}
+
+@media (max-width: 479px) {
+    .featured-container:before {
+        margin-right: -15px;
+    }
+}
+
+.featured-list .slick-list {
+    overflow: visible;
+}
+
+.featured-list-item {
+    outline: none;
+}
+
+.featured-list-item a {
+    outline: none;
+}
+
+.featured-list-item a:hover .heading-19 {
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .slick-courses-item {
+        width: 50%;
+    }
+}
+
+.small-card:hover h4 {
+    text-decoration: underline;
+}
+
+.all-courses-button:hover .all-courses-button-text {
+    text-decoration: underline;
+}
+
+.toggle-sub-nav:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-sub-nav:hover:before {
+    width: 100%;
+}
+
+.hero-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.hero-link:hover:before {
+    width: 100%;
+}
+
+.most-popular-list {
+    counter-reset: number;
+}
+
+.most-popular-item {
+    counter-increment: number;
+}
+
+.most-popular-item .path:before {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    content: counter(number);
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 9;
+}
+
+.most-popular-item-link:hover .monst-popular-text-title {
+    text-decoration: underline;
+}
+
+.featured-list-item-link:hover .featured-list-item-title {
+    text-decoration: underline;
+}
+
+.live-classes-wrapper-link:hover .live-classes-wrapper-title {
+    text-decoration: underline;
+}
+
+.slick-courses-item-link:hover .slick-courses-item-title {
+    text-decoration: underline;
+}

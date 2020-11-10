@@ -1,0 +1,83 @@
+.big-statement {
+    background-color: #0CAADC;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+@media (min-width: 769px) {
+    .big-statement {
+        padding-top: 120px;
+        padding-bottom: 120px
+    }
+}
+
+@media (min-width: 769px) {
+    .hero--emerald-green-bottom+.big-statement {
+        padding-top: 160px;
+        padding-bottom: 80px
+    }
+}
+
+.big-statement__frame {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 6.57895%
+}
+
+@media (min-width: 769px) {
+    .big-statement__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (min-width: 769px) {
+    .big-statement__frame {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+.big-statement__statement {
+    font-family: "Reckless";
+    font-feature-settings: "liga";
+    font-size: 58px;
+    line-height: 133%;
+    font-weight: 200;
+    letter-spacing: 0;
+    font-weight: 200;
+    grid-column-start: 2;
+    grid-column-end: 24;
+    color: rgb(39, 34, 34)
+}
+
+@media (max-width: 768px) {
+    .big-statement__statement {
+        font-size: 40px;
+        line-height: 110%
+    }
+}
+
+@media (max-width: 768px) {
+    .big-statement__statement {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 40px;
+        line-height: 135%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+    .big-statement__statement {
+        font-size: 26px;
+        line-height: 135%
+    }
+}

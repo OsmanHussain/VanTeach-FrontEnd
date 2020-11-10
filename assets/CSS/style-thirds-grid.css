@@ -1,0 +1,241 @@
+.thirds-grid {
+    background-color: #DCF2FA;
+    border-bottom: 1px solid #05495E
+}
+
+.thirds-grid__frame {
+    padding-top: 80px
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__frame {
+        padding-top: 120px
+    }
+}
+
+.thirds-grid__chapter__outer {
+    border-bottom: 1px solid #05495E;
+    padding-bottom: 64px
+}
+
+.thirds-grid__chapter {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__chapter {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+.thirds-grid__chapter>* {
+    margin-top: 24px
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__chapter>* {
+        margin-top: 32px
+    }
+}
+
+.thirds-grid__chapter>*:first-child {
+    margin-top: 0px
+}
+
+.thirds-grid__chapter__title {
+    font-family: "Basis", arial, sans-serif;
+    font-feature-settings: "liga";
+    font-size: 72px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__chapter__title {
+        font-size: 48px;
+        line-height: 110%
+    }
+}
+
+.thirds-grid__cards {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px;
+    display: flex
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__cards {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__cards {
+        flex-direction: column
+    }
+}
+
+.thirds-grid__cards__card {
+    position: relative;
+    flex: 1
+}
+
+.thirds-grid__cards__card>* {
+    margin-top: 24px
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__cards__card>* {
+        margin-top: 32px
+    }
+}
+
+.thirds-grid__cards__card>*:first-child {
+    margin-top: 0px
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__cards__card {
+        border-right: 1px solid #05495E;
+        padding-top: 64px;
+        padding-bottom: 80px;
+        padding-right: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 1)+ ( (min(100vw, 1400px) - 120px) * .02083 * 1)));
+        padding-left: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 1)+ ( (min(100vw, 1400px) - 120px) * .02083 * 1)))
+    }
+    .thirds-grid__cards__card:first-child {
+        padding-right: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 1)+ ( (min(100vw, 1400px) - 120px) * .02083 * 1)));
+        padding-left: 0
+    }
+    .thirds-grid__cards__card:last-child {
+        padding-left: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 1)+ ( (min(100vw, 1400px) - 120px) * .02083 * 1)));
+        padding-right: 0;
+        border-right: 0px
+    }
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__cards__card {
+        padding-top: 64px;
+        padding-bottom: 80px
+    }
+    .thirds-grid__cards__card:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -20px;
+        height: 1px;
+        width: calc(100%+ 40px);
+        background-color: #05495E
+    }
+    .thirds-grid__cards__card:last-child:after {
+        display: none
+    }
+}
+
+.thirds-grid__cards__card__eyebrow {
+    font-family: "Basis", arial, sans-serif;
+    font-feature-settings: "liga";
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 500;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__cards__card__eyebrow {
+        font-size: 14px;
+        line-height: 125%
+    }
+}
+
+.thirds-grid__cards__card__title {
+    font-family: "Reckless";
+    font-feature-settings: "liga";
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 200;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__cards__card__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}
+
+@media (min-width: 769px) {
+    .thirds-grid__cards__card__title {
+        margin-top: 64px;
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 32px;
+        line-height: 133%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 769px) and (max-width: 768px) {
+    .thirds-grid__cards__card__title {
+        font-size: 22px;
+        line-height: 133%
+    }
+}
+
+@media (min-width: 1024px) {
+    .thirds-grid__cards__card__title {
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 40px;
+        line-height: 135%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 768px) {
+    .thirds-grid__cards__card__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}
+
+.thirds-grid__cards__card__body {
+    font-family: "Basis", arial, sans-serif;
+    font-feature-settings: "liga";
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .thirds-grid__cards__card__body {
+        font-size: 14px;
+        line-height: 160%
+    }
+}
+
+.thirds-grid__media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.thirds-grid__media__image {
+    width: 100%
+}
+
+.thirds-grid__media__image__sizer:before {
+    padding-top: 100%
+}

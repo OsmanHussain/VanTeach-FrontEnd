@@ -1,0 +1,150 @@
+.chapter-image {
+    background-color: #DCF2FA;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+@media (min-width: 1024px) {
+    .chapter-image {
+        padding-top: 120px;
+        padding-bottom: 120px
+    }
+}
+
+.chapter-image--image-right .chapter-image__media {
+    grid-column-start: 10;
+    grid-column-end: 24;
+    order: 2
+}
+
+.chapter-image--image-right .chapter-image__content {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    order: 1
+}
+
+.chapter-image__frame {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px
+}
+
+@media (min-width: 769px) {
+    .chapter-image__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .chapter-image__frame {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 6.57895%
+    }
+}
+
+@media (min-width: 1024px) and (min-width: 769px) {
+    .chapter-image__frame {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+@media (max-width: 1023px) {
+    .chapter-image__frame {
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column
+    }
+}
+
+.chapter-image__media {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (min-width: 1024px) {
+    .chapter-image__media {
+        grid-column-start: 1;
+        grid-column-end: 15
+    }
+}
+
+@media (max-width: 1023px) {
+    .chapter-image__media {
+        width: 100%;
+        margin-top: 56px
+    }
+}
+
+.chapter-image__media__image {
+    width: 100%
+}
+
+.chapter-image__media__image__sizer:before {
+    padding-top: 65.69921%
+}
+
+.chapter-image__media__image__sizer div.image {
+    background-size: cover
+}
+
+.chapter-image__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (min-width: 1024px) {
+    .chapter-image__content {
+        grid-column-start: 16;
+        grid-column-end: 24
+    }
+}
+
+.chapter-image__chapter>* {
+    margin-top: 24px
+}
+
+@media (min-width: 769px) {
+    .chapter-image__chapter>* {
+        margin-top: 32px
+    }
+}
+
+.chapter-image__chapter>*:first-child {
+    margin-top: 0px
+}
+
+.chapter-image__chapter__title {
+    font-family: "Basis", arial, sans-serif;
+    font-feature-settings: "liga";
+    font-size: 58px;
+    line-height: 133%;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .chapter-image__chapter__title {
+        font-size: 40px;
+        line-height: 110%
+    }
+}
+
+.chapter-image__chapter__cta .cta--secondary {
+    color: #05495E;
+    border-bottom: 2px solid #05495E
+}
+
+.chapter-image__chapter__cta .cta--secondary:hover {
+    color: #05495E
+}
+
+.chapter-image__chapter__cta .cta--secondary:active {
+    color: #05495E
+}

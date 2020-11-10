@@ -1,0 +1,141 @@
+.grid-1x1 {
+    background-color: #F8FAF4;
+    padding-bottom: 96px;
+    overflow: hidden
+}
+
+.grid-1x1--image-right .grid-1x1__media {
+    order: 2
+}
+
+.grid-1x1--image-right .grid-1x1__content {
+    order: 1
+}
+
+.module--box+.module--space-bottom.grid-1x1 {
+    padding-top: 96px
+}
+
+.grid-1x1__frame {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px
+}
+
+@media (min-width: 769px) {
+    .grid-1x1__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-1x1__frame {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 6.57895%
+    }
+}
+
+@media (min-width: 1024px) and (min-width: 769px) {
+    .grid-1x1__frame {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+@media (max-width: 1023px) {
+    .grid-1x1__frame {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-1x1__media {
+        grid-column-start: 1;
+        grid-column-end: 14
+    }
+}
+
+@media (max-width: 1023px) {
+    .grid-1x1__media {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px
+    }
+}
+
+@media (max-width: 1023px) and (max-width: 768px) {
+    .grid-1x1__media {
+        margin-left: -28px;
+        margin-right: -28px
+    }
+}
+
+.grid-1x1__media__image {
+    width: 100%
+}
+
+.grid-1x1__media__image__sizer:before {
+    padding-top: 71.22507%
+}
+
+@media (min-width: 769px) {
+    .grid-1x1__media__image__sizer:before {
+        padding-top: 71.22507%
+    }
+}
+
+.grid-1x1__content {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (min-width: 1024px) {
+    .grid-1x1__content {
+        grid-column-start: 15;
+        grid-column-end: 24
+    }
+}
+
+@media (max-width: 1023px) {
+    .grid-1x1__content {
+        flex: 1
+    }
+}
+
+.grid-1x1__chapter>* {
+    margin-top: 24px
+}
+
+@media (min-width: 769px) {
+    .grid-1x1__chapter>* {
+        margin-top: 32px
+    }
+}
+
+.grid-1x1__chapter>*:first-child {
+    margin-top: 0px
+}
+
+.grid-1x1__chapter__title {
+    font-family: "Reckless";
+    font-feature-settings: "liga";
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 200;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .grid-1x1__chapter__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}

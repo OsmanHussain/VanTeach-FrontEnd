@@ -1,0 +1,138 @@
+.story-pullquote {
+    background-color: #fff;
+    padding-bottom: 120px
+}
+
+@media (max-width: 768px) {
+    .story-pullquote {
+        padding-bottom: 96px
+    }
+}
+
+.story-pullquote--green-light {
+    background-color: #C8E3D8
+}
+
+@media (min-width: 769px) {
+    .image-features+.story-pullquote {
+        padding-top: 40px
+    }
+}
+
+.image-features+.story-pullquote--green-light {
+    padding-top: 96px
+}
+
+@media (min-width: 769px) {
+    .image-features+.story-pullquote--green-light {
+        padding-top: 120px
+    }
+}
+
+.story-pullquote__frame {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+.story-pullquote__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 6.57895%
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__content {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+@media (max-width: 768px) {
+    .story-pullquote__chapter {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding-left: calc( ( (( (100vw - 56px) * .11112) * 1)+ ( (100vw - 56px) * .06579 * 0)))
+    }
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__chapter {
+        grid-column-start: 3;
+        grid-column-end: 23
+    }
+}
+
+.story-pullquote__chapter__title {
+    position: relative;
+    font-family: "Reckless";
+    font-feature-settings: "liga";
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 200;
+    letter-spacing: 0;
+    margin-bottom: 16px
+}
+
+.story-pullquote__chapter__title:before {
+    content: '“';
+    position: absolute;
+    top: 0;
+    font-size: 200%
+}
+
+@media (max-width: 768px) {
+    .story-pullquote__chapter__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__chapter__title {
+        font-family: "Reckless", aria, sans-serif;
+        font-feature-settings: "liga";
+        font-size: 58px;
+        line-height: 133%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 769px) and (max-width: 768px) {
+    .story-pullquote__chapter__title {
+        font-size: 40px;
+        line-height: 110%
+    }
+}
+
+.story-pullquote__chapter__title:before {
+    left: -30px
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__chapter__title:before {
+        top: 20px;
+        left: -60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .story-pullquote__chapter__title:before {
+        left: -60px
+    }
+}
+
+@media (min-width: 769px) {
+    .story-pullquote__chapter__title {
+        margin-bottom: 48px
+    }
+}

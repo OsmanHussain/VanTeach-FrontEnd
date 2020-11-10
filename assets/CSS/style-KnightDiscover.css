@@ -1,0 +1,150 @@
+/*-------------------------------------------------------------
+# Elements from pricing Athlean clone
+-------------------------------------------------------------*/
+.pricing__columns__column__pricing__price {
+  font-family: "Reckless";
+  font-feature-settings: "liga";
+  font-size: 72px;
+  line-height: 110%;
+  font-weight: 200;
+  letter-spacing: 0;
+}
+
+.pricing__columns__column__subtitle {
+  font-family: "Basis",arial,sans-serif;
+  font-feature-settings: "liga";
+  font-size: 20px;
+  line-height: 180%;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.pricing__columns__column__title {
+  font-family: "Reckless";
+  font-feature-settings: "liga";
+  font-size: 40px;
+  line-height: 135%;
+  font-weight: 200;
+  letter-spacing: 0;
+}
+
+.pricing__columns__column__pricing__price-supplement {
+  font-family: "Basis",arial,sans-serif;
+  font-feature-settings: "liga";
+  font-size: 14px;
+  line-height: 133%;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-left: 24px;
+}
+
+.pricing__columns__column__cta {
+  margin-top: 24px;
+}
+
+@media (min-width: 1024px){
+  .pricing__columns__column__features {
+      -moz-column-count: 1;
+      column-count: 1;
+  }
+}
+@media (min-width: 769px){
+.pricing__columns__column__features {
+    -moz-column-count: 2;
+    column-count: 2;
+}
+}
+.pricing__columns__column__features {
+    font-family: "Basis",arial,sans-serif;
+    font-feature-settings: "liga";
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    letter-spacing: 0;
+    list-style: none;
+    padding: 0px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.pricing__columns__column__features__feature {
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 20px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.pricing__columns__column__features__feature:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "·";
+  font-size: 30px;
+  vertical-align: middle;
+}
+/*--------------------------------------------------------------
+# Services from knight temp
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 60px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #DCF2FA;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 18px;
+  border-bottom: 5px solid #fff;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #0caadc;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.services .icon-box .icon i {
+  font-size: 28px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+
+.services .icon-box h4 a {
+  color: #0caadc;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: #0caadc;
+}
+
+.services .icon-box:hover h4 a {
+  color: #067da1;
+}

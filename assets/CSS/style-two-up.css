@@ -1,0 +1,354 @@
+@media (min-width: 769px) {
+    .two-up {
+        background: linear-gradient(to right, #05495E 50%, #222 50%);
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+}
+
+@media (min-width: 1024px) {
+    .two-up {
+        padding-top: 120px;
+        padding-bottom: 120px
+    }
+}
+
+@media (min-width: 769px) {
+    .two-up--image-right {
+        background: linear-gradient(to left, #05495E 50%, #222 50%)
+    }
+    .two-up--image-right .two-up__media {
+        order: 1;
+        grid-column-start: 2;
+        grid-column-end: 11
+    }
+    .two-up--image-right .two-up__content {
+        order: 2;
+        grid-column-start: 15;
+        grid-column-end: 24;
+        padding-left: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 0)+ ( (min(100vw, 1400px) - 120px) * .02083 * 1)))
+    }
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread {
+        background: linear-gradient(to right, #0CAADC 50%, #222 50%)
+    }
+}
+
+.two-up--quote-spread .two-up__media {
+    order: 2
+}
+
+@media (max-width: 768px) {
+    .two-up--quote-spread .two-up__media {
+        background-color: #222
+    }
+}
+
+.two-up--quote-spread .two-up__content {
+    order: 1
+}
+
+@media (max-width: 768px) {
+    .two-up--quote-spread .two-up__content {
+        background-color: #0CAADC
+    }
+}
+
+.two-up--quote-spread .two-up__chapter {
+    color: #222
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread .two-up__chapter {
+        margin-left: calc( (( (min(100vw, 1440px) - 120px) * .02083 * 1)+ ( (min(100vw, 1400px) - 120px) * .02083 * 0)))
+    }
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread .two-up__chapter__title:before {
+        font-size: 120% !important
+    }
+}
+
+.two-up--quote-spread .cta--secondary.cta--secondary {
+    color: #222;
+    border-bottom: 2px solid #222
+}
+
+.two-up--quote-spread .cta--secondary.cta--secondary:hover {
+    color: #444
+}
+
+.two-up--quote-spread .cta--secondary.cta--secondary:active {
+    color: #444
+}
+
+.two-up--quote-spread .two-up__chapter__title {
+    position: relative
+}
+
+.two-up--quote-spread .two-up__chapter__title:before {
+    content: '“';
+    position: absolute;
+    top: 0;
+    font-size: 200%
+}
+
+.two-up--quote-spread .two-up__chapter__title:before {
+    left: -40px
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread .two-up__chapter__title:before {
+        left: -60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .two-up--quote-spread .two-up__chapter__title:before {
+        left: -60px
+    }
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 40px;
+        line-height: 135%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 769px) and (max-width: 768px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}
+
+@media (min-width: 1024px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 58px;
+        line-height: 133%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 768px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-size: 40px;
+        line-height: 110%
+    }
+}
+
+@media (min-width: 1200px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 72px;
+        line-height: 110%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 768px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-size: 48px;
+        line-height: 110%
+    }
+}
+
+@media (max-width: 768px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-family: "Reckless";
+        font-feature-settings: "liga";
+        font-size: 58px;
+        line-height: 133%;
+        font-weight: 200;
+        letter-spacing: 0
+    }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+    .two-up--quote-spread .two-up__chapter__title {
+        font-size: 40px;
+        line-height: 110%
+    }
+}
+
+.two-up--quote-spread .two-up__chapter__body {
+    margin-top: 80px
+}
+
+@media (min-width: 769px) {
+    .two-up--quote-spread .two-up__chapter__body {
+        margin-top: 96px
+    }
+}
+
+@media (min-width: 1024px) {
+    .two-up--quote-spread .two-up__chapter__body {
+        margin-top: 120px
+    }
+}
+
+@media (min-width: 1200px) {
+    .two-up--quote-spread .two-up__chapter__body {
+        margin-top: 160px
+    }
+}
+
+@media (min-width: 769px) {
+    .two-up__frame {
+        width: calc(100% - 56px);
+        margin: 0 auto;
+        --grid-side: 28px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 6.57895%
+    }
+}
+
+@media (min-width: 769px) and (min-width: 769px) {
+    .two-up__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (min-width: 769px) and (min-width: 769px) {
+    .two-up__frame {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+@media (max-width: 768px) {
+    .two-up__frame {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column
+    }
+}
+
+.two-up__media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (min-width: 769px) {
+    .two-up__media {
+        order: 2;
+        grid-column-start: 15;
+        grid-column-end: 24
+    }
+}
+
+@media (max-width: 768px) {
+    .two-up__media {
+        background-color: #05495E;
+        order: 2;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: calc( ( (( (100vw - 56px) * .11112) * 1)+ ( (100vw - 56px) * .06579 * 0))+ 28px);
+        padding-right: calc( ( (( (100vw - 56px) * .11112) * 1)+ ( (100vw - 56px) * .06579 * 0))+ 28px)
+    }
+}
+
+.two-up__media__image {
+    width: 100%
+}
+
+.two-up__media__image__sizer:before {
+    padding-top: 131.17155%
+}
+
+.two-up__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (min-width: 769px) {
+    .two-up__content {
+        order: 1;
+        grid-column-start: 2;
+        grid-column-end: 11
+    }
+}
+
+@media (max-width: 768px) {
+    .two-up__content {
+        background-color: #222;
+        order: 1;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: calc( ( (( (100vw - 56px) * .11112) * 1)+ ( (100vw - 56px) * .06579 * 0))+ 28px);
+        padding-right: calc( ( (( (100vw - 56px) * .11112) * 1)+ ( (100vw - 56px) * .06579 * 0))+ 28px)
+    }
+}
+
+.two-up__chapter {
+    color: #DCF2FA
+}
+
+@media (min-width: 769px) {
+    .two-up__chapter {
+        padding: 0
+    }
+}
+
+.two-up__chapter>* {
+    margin-top: 24px
+}
+
+@media (min-width: 769px) {
+    .two-up__chapter>* {
+        margin-top: 32px
+    }
+}
+
+.two-up__chapter>*:first-child {
+    margin-top: 0px
+}
+
+.two-up__chapter .cta--secondary {
+    color: #DCF2FA;
+    border-bottom: 2px solid #DCF2FA
+}
+
+.two-up__chapter .cta--secondary:hover {
+    color: #fff
+}
+
+.two-up__chapter .cta--secondary:active {
+    color: #fff
+}
+
+.two-up__chapter__title {
+    font-family: "Reckless";
+    font-feature-settings: "liga";
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 200;
+    letter-spacing: 0
+}
+
+@media (max-width: 768px) {
+    .two-up__chapter__title {
+        font-size: 26px;
+        line-height: 135%
+    }
+}

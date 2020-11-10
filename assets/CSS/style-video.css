@@ -1,0 +1,179 @@
+.video {
+    color: #05495E;
+    background-color: #F8FAF4;
+    padding-bottom: 160px
+}
+
+@media (max-width: 768px) {
+    .video {
+        padding-bottom: 96px
+    }
+}
+
+.video--about-page {
+    background: linear-gradient(to bottom, #fff 40%, #DCF2FA 40%);
+    padding-bottom: 0
+}
+
+@media (min-width: 769px) {
+    .video--about-page .video__content {
+        grid-column-start: 4;
+        grid-column-end: 22
+    }
+}
+
+.video--about-page .video__content__caption {
+    max-width: none
+}
+
+.big-statement+.video--emerald-green-top {
+    background: linear-gradient(to top, #F8FAF4 80%, #0CAADC 20%)
+}
+
+@media (max-width: 768px) {
+    .big-statement+.video--emerald-green-top {
+        padding-top: 16px !important
+    }
+}
+
+@media (min-width: 769px) {
+    .story-pullquote .video {
+        padding-top: 40px
+    }
+}
+
+.video__frame {
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    --grid-side: 28px;
+    flex-direction: column
+}
+
+@media (min-width: 769px) {
+    .video__frame {
+        width: calc(100% - (60px * 2));
+        max-width: 1320px;
+        --grid-side: 60px
+    }
+}
+
+@media (min-width: 769px) {
+    .video__frame {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 6.57895%
+    }
+}
+
+@media (min-width: 769px) and (min-width: 769px) {
+    .video__frame {
+        grid-template-columns: repeat(24, 1fr);
+        grid-column-gap: 2.08333%
+    }
+}
+
+@media (max-width: 768px) {
+    .video__frame {
+        display: flex;
+        justify-content: flex-end
+    }
+}
+
+.video__content {
+    width: 100%;
+    position: relative
+}
+
+@media (min-width: 769px) {
+    .video__content {
+        grid-column-start: 7;
+        grid-column-end: 25
+    }
+}
+
+.video__media {
+    position: relative;
+    display: block
+}
+
+.video__media:hover {
+    cursor: pointer
+}
+
+.video__media:focus {
+    outline: none
+}
+
+.video__media:focus .video__media__video-play {
+    box-shadow: 0 0 0 2px #0CAADC
+}
+
+.video__media:active .video__media__video-play svg path {
+    fill: #05495E
+}
+
+.video__media__image__sizer:before {
+    padding-top: 56.15463%
+}
+
+.video__media__image__sizer .image {
+    background-size: cover !important
+}
+
+.video__content__caption {
+    margin-top: 32px;
+    font-family: "Basis", arial, sans-serif;
+    font-feature-settings: "liga";
+    font-size: 22px;
+    line-height: 135%;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 480px
+}
+
+@media (max-width: 768px) {
+    .video__content__caption {
+        font-size: 18px;
+        line-height: 135%
+    }
+}
+
+.video__content__cta {
+    margin-top: 32px
+}
+
+.video__media__video-play {
+    border-radius: 50%;
+    position: absolute
+}
+
+.video__media__video-play svg {
+    height: 100%;
+    width: 100%
+}
+
+.video__media__video-play svg path {
+    fill: #0CAADC
+}
+
+.video__media__video-play:active path {
+    fill: #05495E
+}
+
+@media (max-width: 768px) {
+    .video__media__video-play {
+        height: 48px;
+        left: calc(50% - 24px);
+        top: calc(50% - 24px);
+        width: 48px
+    }
+}
+
+@media (min-width: 769px) {
+    .video__media__video-play {
+        height: 120px;
+        left: calc(50% - 60px);
+        top: calc(50% - 60px);
+        width: 120px
+    }
+}
